@@ -72,7 +72,7 @@ nav a {
 
     font-weight: bold;
 
-    transition: 10s;
+    transition: 0.3s;
 }
 
 nav a:hover {
