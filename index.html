@@ -23,7 +23,7 @@
 
 </head>
 
-<script src="js/script.js"></script>
+
 <body>
 
     <!-- ================= HEADER ================= -->
@@ -79,10 +79,9 @@
 
         <div class="home-text">
 
-           <p class="welcome-text" id="greeting">
-    Welcome to My Portfolio
-</p>
-
+            <p class="welcome-text" id="greeting">
+                       Welcome to My Portfolio
+            </p>
             <h2>Hi, I'm Hrithika Krishna</h2>
 
             <h3>
@@ -347,39 +346,63 @@
         </section>
 
 
-        <!-- ================= ACTIVITIES / GALLERY ================= -->
-
-        <section id="activities">
-
-            <h2>
+       
+            
                 Activities / Gallery
-            </h2>
+                <section id="activities">
+
+    <h2>Activities / Gallery</h2>
+
+    <div class="main-gallery">
+
+        <img
+            id="mainGalleryImage"
+            src="images/project1.svg"
+            alt="Spam Classification Project"
+        >
+
+        <h3 id="galleryTitle">
+            Spam Message Classification
+        </h3>
+
+        <p id="galleryDescription">
+            A Pattern Recognition project using the Naive Bayes
+            algorithm for spam message classification.
+        </p>
+
+    </div>
 
 
-            <article>
+    <div class="gallery-thumbnails">
 
-                <h3>Academic Activities</h3>
+        <img
+            class="gallery-thumb"
+            src="images/project1.svg"
+            data-title="Spam Message Classification"
+            data-description="A Pattern Recognition project using the Naive Bayes algorithm for spam message classification."
+            alt="Spam Classification"
+        >
 
-                <p>
-                    This section contains photographs and
-                    details of my academic, technical and
-                    college activities.
-                </p>
+        <img
+            class="gallery-thumb"
+            src="images/project2.svg"
+            data-title="Job Portal Backend"
+            data-description="A backend development project using Python, FastAPI, SQLAlchemy and PostgreSQL."
+            alt="Job Portal"
+        >
 
-            </article>
+        <img
+            class="gallery-thumb"
+            src="images/activity.svg"
+            data-title="Learning & Activities"
+            data-description="Academic activities, technical learning and project development."
+            alt="Activities"
+        >
 
+    </div>
 
-            <!-- Gallery -->
-
-            <div class="gallery">
-
-                <p>
-                    Photos of my academic, technical and
-                    college activities will be added here.
-                </p>
-
-            </div>
-
+</section>
+         
 
             <!-- ================= IFRAME ================= -->
 
@@ -404,7 +427,7 @@
             <h2>Contact Me</h2>
 
 
-            <form>
+            <form id="contactForm">
 
 
                 <!-- NAME -->
@@ -518,6 +541,7 @@
                 <button type="submit">
                     Send Message
                 </button>
+                <p id="formMessage"></p>
 
 
             </form>
@@ -568,7 +592,8 @@
 
     </footer>
 
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
