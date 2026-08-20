@@ -537,3 +537,39 @@ footer {
     }
 
 }
+/* =========================================
+   INTERACTIVE GALLERY
+   ========================================= */
+
+.main-gallery {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main-gallery img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery-thumb {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.gallery-thumb:hover {
+    transform: scale(1.05);
+    border-color: #db2777;
+}

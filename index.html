@@ -54,6 +54,9 @@
         </a>
 
         <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+
+<a href="#weather">Weather</a>
 
         <a href="#activities">
             Activities / Gallery
@@ -82,7 +85,7 @@
             <p class="welcome-text" id="greeting">
                        Welcome to My Portfolio
             </p>
-            <h2>Hi, I'm HRITHIKA KRISHNA</h2>
+            <h2>Hi, I'm Hrithika Krishna</h2>
 
             <h3>
                 Artificial Intelligence & Data Science Student
@@ -344,64 +347,55 @@
             </article>
 
         </section>
+<!-- ================= ARTICLES ================= -->
 
+<section id="articles">
 
-       
-            
-                Activities / Gallery
-                <section id="activities">
+    <h2>Latest Technology Articles</h2>
 
-    <h2>Activities / Gallery</h2>
+    <p>
+        Articles retrieved from an external feed using JavaScript fetch().
+    </p>
 
-    <div class="main-gallery">
-
-        <img
-            id="mainGalleryImage"
-            src="images/project1.svg"
-            alt="Spam Classification Project"
-        >
-
-        <h3 id="galleryTitle">
-            Spam Message Classification
-        </h3>
-
-        <p id="galleryDescription">
-            A Pattern Recognition project using the Naive Bayes
-            algorithm for spam message classification.
-        </p>
-
+    <div id="articlesContainer">
+        <p>Loading articles...</p>
     </div>
 
+</section>
 
-    <div class="gallery-thumbnails">
 
-        <img
-            class="gallery-thumb"
-            src="images/project1.svg"
-            data-title="Spam Message Classification"
-            data-description="A Pattern Recognition project using the Naive Bayes algorithm for spam message classification."
-            alt="Spam Classification"
-        >
+<!-- ================= WEATHER ================= -->
 
-        <img
-            class="gallery-thumb"
-            src="images/project2.svg"
-            data-title="Job Portal Backend"
-            data-description="A backend development project using Python, FastAPI, SQLAlchemy and PostgreSQL."
-            alt="Job Portal"
-        >
+<section id="weather">
 
-        <img
-            class="gallery-thumb"
-            src="images/activity.svg"
-            data-title="Learning & Activities"
-            data-description="Academic activities, technical learning and project development."
-            alt="Activities"
-        >
+    <h2>Weather Lookup</h2>
+
+    <p>
+        Enter a city to check the current weather.
+    </p>
+
+    <input
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name"
+    >
+
+    <button type="button" id="weatherButton">
+        Check Weather
+    </button>
+
+    <div id="weatherResult">
+
+        <p>Enter a city to get the weather.</p>
 
     </div>
 
 </section>
+
+       
+            
+                Activities / Gallery
+                
          
 
             <!-- ================= IFRAME ================= -->
